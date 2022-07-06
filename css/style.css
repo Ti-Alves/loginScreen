@@ -1,10 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
 .login-div {
     min-width: 100vw;
     min-height: 100vh;
@@ -28,6 +21,9 @@
     height: 80vh;
     background-color: rgb(247, 247, 247);
     border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .login-one-img {
@@ -44,8 +40,10 @@
     flex-direction: column;
     /* align-items: center; */
     justify-content: space-between;
-    padding: 5%;
     border-radius: 0 10px 10px 0;
+    padding: 5%;
+    padding-right: 10%;
+    padding-top: 2.5%;
 }
 
 .login-title {
@@ -56,6 +54,7 @@
 .login-text {
     /* text-align: center; */
     font-family: var(--openSans);
+    font-size: .8em;
     font-weight: 400;
     color: rgb(146, 146, 146);
 }
@@ -93,8 +92,9 @@
 .forgot-pass {
     text-align: right;
     font-family: var(--montserrat);
-    font-size: .8em;
-    margin-bottom: 20px;
+    font-size: .6em;
+    margin-bottom: 1em;
+    margin-top: -1em;
 }
 
 .login-submit {
@@ -137,6 +137,24 @@
     margin: 5px;
 }
 
+.login-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.login-footer-text{
+    font-family: var(--openSans);
+    color: var(--grayText);
+    font-size: .6em;
+}
+
+.create-account{
+    font-family: var(--openSans);
+    font-size: .6em;
+}
+
 /* Global Classes */
 .shape1 {
     font-size: 1em;
@@ -152,7 +170,6 @@
     font-family: var(--openSans);
     font-size: .8em;
     border: none;
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -172,4 +189,19 @@
 .a:focus{
     outline: none;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px){
+    .login-content{
+        width: 80%;
+    }
+    .login-one{
+        display: none;
+    }
+    .login-two{
+        width: 100%;
+        border-radius: 10px;
+        padding: 10%;
+        padding-top: 5%;
+    }
 }
