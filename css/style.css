@@ -14,6 +14,8 @@
     align-items: center;
     justify-content: center;
     height: 60%;
+    /* box-shadow: #001345; */
+    filter: drop-shadow(-15px 15px 5px #001345);
 }
 
 .login-one {
@@ -27,7 +29,7 @@
 }
 
 .login-one-img {
-    width: 100%;
+    width: 70%;
     height: auto;
     object-fit: cover;
 }
