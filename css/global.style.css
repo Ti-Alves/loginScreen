@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --openSans: 'Open Sans';
+    --montserrat: 'Montserrat';
+
+    --blue: rgba(63,121,188,255);
+    --grayBg: rgb(255, 255, 255);
+    --grayText: rgb(146, 146, 146);
+    --grayShadow: rgb(209, 209, 209);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+    color: white;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.blue-text {
+    color: var(--blue);
+}
+
+.white-text{
+    color: white;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
